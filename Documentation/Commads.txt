@@ -1,0 +1,7 @@
+To Start: Cd Frontend && npm Start
+Start backend: cd Backend && uvicorn main:app --reload
+
+Fixing connectivity Issue:    cd Backend
+   rm phishing_sim.db
+   python -c "from database import init_db; init_db()"
+

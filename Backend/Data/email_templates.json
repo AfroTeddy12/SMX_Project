@@ -1,0 +1,40 @@
+{
+   
+    "templates": [
+        {
+            "subject": "Urgent: Your SMX Account Security Alert",
+            "body": "Dear {name},\n\nWe have detected suspicious activity on your SMX account. Please verify your credentials immediately by clicking the link below:\n\n{link}\n\nIf you don't take action within 24 hours, your account will be suspended.\n\nBest regards,\nSMX Security Team",
+            "type": "account_security",
+            "difficulty": 2,
+            "description": "Basic account security alert template targeting users' fear of account compromise"
+        },
+        {
+            "subject": "Important: SMX Document Access Request",
+            "body": "Hello {name},\n\nI need access to the Q4 financial report for SMX. Could you please share it through this secure link:\n\n{link}\n\nThis is urgent for the board meeting.\n\nThanks,\n{manager_name}\nSMX Management",
+            "type": "document_request",
+            "difficulty": 3,
+            "description": "Business document request template exploiting authority and urgency"
+        },
+        {
+            "subject": "Your SMX Package Delivery Update",
+            "body": "Dear {name},\n\nYour SMX package #PKG{random_number} is ready for delivery. Click here to confirm your address:\n\n{link}\n\nTrack your delivery: {tracking_link}\n\nRegards,\nSMX Delivery Team",
+            "type": "delivery_notification",
+            "difficulty": 1,
+            "description": "Package delivery notification template targeting online shoppers"
+        },
+        {
+            "subject": "Action Required: SMX Password Reset",
+            "body": "Hi {name},\n\nWe received a request to reset your SMX password. If this was you, click the link below:\n\n{link}\n\nIf you didn't request this, please ignore this email.\n\nSMX Security Team",
+            "type": "password_reset",
+            "difficulty": 2,
+            "description": "Password reset request template exploiting account security concerns"
+        },
+        {
+            "subject": "SMX Meeting Invitation: Project Update",
+            "body": "Hello {name},\n\nPlease join the SMX project update meeting. Click to view details:\n\n{link}\n\nAgenda:\n- Q4 Progress Review\n- Budget Discussion\n- Timeline Updates\n\nBest regards,\nSMX Project Manager",
+            "type": "meeting_invitation",
+            "difficulty": 4,
+            "description": "Meeting invitation template targeting business professionals"
+        }
+    ]
+} 
