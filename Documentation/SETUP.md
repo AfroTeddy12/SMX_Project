@@ -30,6 +30,8 @@ npm install
 npm start
 ```
 
+**Note**: The frontend uses React 18.2.0 for compatibility with all dependencies. If you encounter any dependency conflicts, the project is configured to work with this stable version.
+
 ### 3. Access the Application
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000

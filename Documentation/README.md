@@ -42,6 +42,8 @@ The SMX Phishing Simulation Platform leverages cutting-edge AI technology to cre
 - npm or yarn
 - Google AI API key (for Gemma integration)
 
+**Note**: The frontend uses React 18.2.0 for optimal compatibility with all dependencies including react-simple-maps.
+
 ### Backend Setup
 ```bash
 cd Backend
@@ -358,6 +360,38 @@ All API endpoints are configured in `frontend/src/config/api.js`. If you need to
 - Data retention policies
 - User consent and transparency
 
+## 🔧 Troubleshooting
+
+### Common Issues
+
+#### Frontend Dependency Issues
+- **Problem**: `react-scripts` not recognized
+  - **Solution**: Run `npm install` in the frontend directory
+- **Problem**: React dependency conflicts
+  - **Solution**: The project uses React 18.2.0 for compatibility. If you encounter conflicts, ensure you're using this version
+- **Problem**: `ajv` module resolution errors
+  - **Solution**: Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
+
+#### Backend Issues
+- **Problem**: Database connection errors
+  - **Solution**: Ensure `phishing_sim.db` exists and has proper permissions
+- **Problem**: Google AI API errors
+  - **Solution**: Verify your API key in `.env` file and check quota limits
+- **Problem**: CORS errors in development
+  - **Solution**: Backend is configured for development with `allow_origins=["*"]`
+
+#### General Issues
+- **Problem**: Port already in use
+  - **Solution**: Change ports in configuration or kill existing processes
+- **Problem**: Environment variables not loading
+  - **Solution**: Ensure `.env` file exists in Backend directory with correct format
+
+### Getting Help
+- Check the logs for detailed error messages
+- Verify all prerequisites are installed
+- Ensure environment variables are properly configured
+- Test with the provided test scripts
+
 ## 🚀 Deployment
 
 ### Backend Deployment
@@ -445,6 +479,7 @@ This folder contains all documentation files for the AI Phishing Simulation Plat
 - **Frontend_TOOLS.md** - Frontend development tools and guidelines
 - **TOOLS.md** - General development tools and utilities
 - **Gemma_Integration_README.md** - AI model integration documentation
+- **React_Dependency_Fix.md** - React dependency compatibility documentation
 - **Executive_Summary.md** - Executive summary of the project
 
 ### 🚀 Simulation & Testing
@@ -463,6 +498,7 @@ This folder contains all documentation files for the AI Phishing Simulation Plat
 1. Read `Backend_README.md` for backend setup
 2. Check `Frontend_TOOLS.md` for frontend development
 3. Review `TOOLS.md` for development utilities
+4. Check `React_Dependency_Fix.md` for dependency compatibility
 
 ### For Presentations
 1. Use `SMX_Phishing_Simulation_Presentation.md` as main content
@@ -487,6 +523,7 @@ This folder contains all documentation files for the AI Phishing Simulation Plat
 | TOOLS.md | 4.6KB | General development tools |
 | SIMULATION_GUIDE.md | 3.7KB | Simulation testing guide |
 | Backend_README.md | 3.2KB | Backend documentation |
+| React_Dependency_Fix.md | 3.0KB | React dependency compatibility |
 | Executive_Summary.md | 2.2KB | Executive summary |
 | FIXES_SUMMARY.md | 1.5KB | Fixes and improvements |
 | Commads.txt | 217B | Quick command reference |

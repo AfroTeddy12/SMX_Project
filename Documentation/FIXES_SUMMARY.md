@@ -13,6 +13,7 @@
 2. **Hardcoded URLs** - Updated all components to use centralized config
 3. **Missing imports** - Fixed component dependencies
 4. **Error handling** - Improved error states and loading indicators
+5. **React dependency conflicts** - Downgraded React from 19.1.0 to 18.2.0 for compatibility with react-simple-maps
 
 ### Database Issues
 1. **Missing columns** - Added `clicked_at` to email_logs table
@@ -43,6 +44,8 @@ npm start
 - `Backend/schemas.py` - Updated EmailLog schema
 - `Backend/migrate_database.py` - Database migration script
 - `frontend/src/config/api.js` - Centralized API configuration
+- `frontend/package.json` - Downgraded React to 18.2.0 for dependency compatibility
+- `frontend/package-lock.json` - Updated dependency tree
 - All page components updated to use centralized config
 
 ## ✅ Status
